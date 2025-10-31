@@ -5,7 +5,9 @@
       "private": true,
       "scripts": {
           "dev": "vite",
+          "prebuild": "node scripts/generate-dashboard-data.js",
           "build": "vite build",
+          "start": "node server.js",
           "generate:workbooks": "node scripts/generate-workbooks.js",
           "generate:dashboard-data": "node scripts/generate-dashboard-data.js",
           "data:refresh": "npm run generate:workbooks && npm run generate:dashboard-data && vite",
@@ -56,12 +58,13 @@
           "sonner": "^2.0.3",
           "tailwind-merge": "*",
           "vaul": "^1.1.2",
-          "vite": "*"
+          "vite": "*",
+          "express": "^4.19.2",
+          "xlsx": "^0.18.5"
       },
       "devDependencies": {
           "@types/node": "^20.10.0",
           "@vitejs/plugin-react-swc": "^3.10.2",
-          "vite": "6.3.5",
-          "xlsx": "^0.18.5"
+          "vite": "6.3.5"
       }
   }
