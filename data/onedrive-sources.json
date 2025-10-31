@@ -1,0 +1,10 @@
+{
+  "items": [
+    { "path": "/InventoryOps/MasterData.xlsx", "target": "MasterData.xlsx" },
+    { "path": "/InventoryOps/Transactions.xlsx", "target": "Transactions.xlsx" },
+    { "path": "/InventoryOps/PO_Combined.xlsx", "target": "PO_Combined.xlsx" },
+    { "path": "/InventoryOps/SO_Combined.xlsx", "target": "SO_Combined.xlsx" }
+  ],
+  "intervalSeconds": 0
+}
+
